@@ -1,0 +1,154 @@
+.navbar{
+    background-color: #222222;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: auto;
+}
+nav ul li a{
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;   
+}
+nav ul li a:hover{
+    color: darkcyan;
+}
+.nav-links-mobile{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+nav i{
+    color:#fff;
+}
+.login-area {
+    color: white;
+  }
+  
+  .login-area a {
+    /* font-weight: 300;
+    font-size: 1.25rem; */
+    color: #fff;
+  }
+  .login-area i {
+    margin: 0 5px 0 15px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .login-area button {
+    margin-left: 20px;
+  }
+  /*-----header-----*/
+.head-container {
+  display:flex;
+  justify-content: space-around;
+  padding: 40px 0 20px 0;
+  background-color: #fff;
+}
+.head-container .box {
+  margin: 0 0 0 30px;
+}
+.head-container a {
+  font-size: 13px;
+  color: grey;
+}
+.head-container i {
+  font-size: 2rem;
+  color:darkcyan;
+  margin-right: 15px;
+}
+.head-container .text {
+  margin-top: 10px;
+}
+.head-container h4 {
+  line-height: 12px;
+}
+.head-container img{
+  width: 100px;
+  border-radius: 20%;
+}
+  @media screen and (max-width: 1200px){
+    nav ul {
+      display: block;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    nav ul.active {
+      background: darkcyan;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 100;
+    }
+    nav ul li a {
+      font-weight: 400;
+      /* opacity: 1; */
+    }
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    .login-area i {
+      margin: 0 10px 0 40px;
+    }
+  nav ul li {
+    display: block;
+  }
+  }
+@media screen and (max-width: 768px) {
+  .login-area i {
+    font-size: 0.8rem;
+  }
+   /*--------header--------*/
+  .head-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head-container .contact {
+    justify-content: center;
+    align-items: center;
+  }
+  .box{
+    display: block;
+  }
+}
+@media(max-width:580px){
+
+  .head-container a {
+    font-size: 10px;
+  }
+  .head-container i {
+    font-size: 1.5rem;
+  }
+  .head-container h4 {
+    line-height: 10px;
+  }
+}
+
+
+ 
